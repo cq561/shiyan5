@@ -24,4 +24,5 @@
 ## 实验结果
 ![image](https://github.com/cq561/shiyan5/blob/main/1.png)  
 ## 实验感想
+大部分代码和思路都参考了同学，感觉自己有很多的不足
 
