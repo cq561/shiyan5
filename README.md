@@ -17,9 +17,22 @@
 计学生类（可利用之前的）；  
 采用交互式方式实例化某学生；  
 设计程序完成上述的业务逻辑处理，并且把“古诗处理后的输出”结果存储到学生基本信息所在的文本文件A中。  
-## 实验过程
-先计学生类   
-   
+## 实验过程   
+  try (FileReader fInputStream = new FileReader("D:\\a.txt");//输入流文件  
+             FileWriter fOutputStream  = new FileWriter("D:\\b.txt")){  
+            StringBuffer st=new StringBuffer();  
+            char[] ch=new char[14];//设置有14个字符  
+            while ((fInputStream.read(ch)) !=-1) {  
+                st.append(ch, 0,7);  
+                st.append("，");  
+                st.append(ch, 7, 7);  
+                st.append("。"+"\n");  
+            }  
+            System.out.println(st);  
+            fOutputStream.write(new String(st));  
+        }catch (IOException e) {  
+            e.printStackTrace();  
+        }     
 
 ## 实验结果
 ![image](https://github.com/cq561/shiyan5/blob/main/1.png)  
